@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.smartData.Listner.ExecutionListener"></listener>
+		<listener class-name="com.smartData.Listner.SuiteListener"></listener>
+		<listener class-name="com.smartData.Listner.TestCaseListener"></listener>
+	</listeners>
+  <test thread-count="5" name="DemoTC">
+    <classes>
+      <class name="com.smartData.TestCases.DemoTC"/>
+    </classes>
+  </test> <!-- DemoTC -->
+</suite> <!-- Suite -->
